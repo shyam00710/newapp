@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef3f8;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userAddress {
+  text-transform: uppercase;
+  color: #0077b5; /* LinkedIn's brand color */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-left-color: #0077b5;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0077b5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#connectWalletBtn {
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#userAddress {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+textarea,
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+#connectMessage {
+  display: none;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #65676b;
+}
+
+button[type="submit"] {
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profile, .job, .application {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header, .job-header, .application-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-header img, .job-header img, .application-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-header .name, .job-header .title, .application-header .applicant-name {
+  font-weight: bold;
+  color: #0077b5;
+}
+
+.profile-header .profession, .job-header .description, .application-header .skills {
+  font-style: italic;
+  color: #666;
+}
+
+button.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0077b5; /* LinkedIn's brand color */
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+button.like-button:hover {
+  color: #005582; /* Darker LinkedIn color on hover */
+}
+
+button.like-button:active {
+  transform: scale(1.1); /* Scale up a bit when clicked */
+}
+
+button.like-button .fas,
+button.like-button .far {
+  font-size: 20px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes-count {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+button.like-button .likes-count {
+  margin-left: 5px;
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tweet {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.author,
+.content {
+  flex-grow: 1;
+}
+
+.tweet-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.profile-header,
+.job-header,
+.application-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-header img,
+.job-header img,
+.application-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-header .name,
+.job-header .title,
+.application-header .applicant-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-header .profession,
+.job-header .description,
+.application-header .skills {
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-content,
+.job-content,
+.application-content {
+  margin-top: 10px;
+}

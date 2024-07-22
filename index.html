@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn-like App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LinkedIn-like App</h1>
+    <div class="connect">
+      <button id="connectWalletBtn">Connect Wallet</button>
+      <div id="userAddress"></div>
+      <div id="connectMessage">Please connect your wallet.</div>
+    </div>
+    
+    <form id="profileForm">
+      <h2>Create Profile</h2>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="profession" placeholder="Profession" required>
+      <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+      <button type="submit">Create Profile</button>
+    </form>
+    
+    <form id="updateProfileForm">
+      <h2>Update Profile</h2>
+      <input type="text" id="updateName" placeholder="Name" required>
+      <input type="text" id="updateProfession" placeholder="Profession" required>
+      <input type="text" id="updateSkills" placeholder="Skills (comma separated)" required>
+      <button type="submit">Update Profile</button>
+    </form>
+    
+    <form id="jobForm">
+      <h2>Post Job</h2>
+      <input type="text" id="jobTitle" placeholder="Job Title" required>
+      <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+      <button type="submit">Post Job</button>
+    </form>
+    
+    <form id="applyForm">
+      <h2>Apply for Job</h2>
+      <input type="number" id="jobId" placeholder="Job ID" required>
+      <button type="submit">Apply</button>
+    </form>
+    
+    <form id="viewProfileForm">
+      <h2>View Profile</h2>
+      <input type="text" id="profileAddress" placeholder="User Address" required>
+      <button type="submit">View Profile</button>
+      <div id="profileResult"></div>
+    </form>
+    
+    <form id="viewApplicantsForm">
+      <h2>View Applicants</h2>
+      <input type="number" id="applicantsJobId" placeholder="Job ID" required>
+      <button type="submit">View Applicants</button>
+      <div id="applicantsResult"></div>
+    </form>
+  </div>
+
+  <script src="web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
