@@ -1,6 +1,6 @@
 import contractABI from "./contractABI.json";
 
-const contractAddress = "0xYourContractAddressHere";
+const contractAddress = "0x7C4e30a43ecC4d3231b5B07ed082329020D141F3";
 
 let web3 = new Web3(window.ethereum);
 let contract = new web3.eth.Contract(contractABI, contractAddress);
