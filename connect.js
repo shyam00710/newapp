@@ -1,6 +1,6 @@
-import Web3 from "web
-import contractABI from "../contracts/main.json";
-import profileContractABI from "../contracts/user.json";
+import Web3 from "web"
+import contractABI from "C:\Users\nandh\linkedin\abi.json";
+import profileContractABI from "C:\Users\nandh\linkedin\abi.json";
 
 const contractAddress = "0x7C4e30a43ecC4d3231b5B07ed082329020D141F3";
 const profileContractAddress = "0xC2Eaf18C577fb0196CA7E16f95430758EE0EF315";
