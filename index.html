@@ -8,11 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Kalvetu-App</h1>
-    <div class="connect">
-      <button id="connectWalletBtn">Connect Wallet</button>
-      <p id="status"></p>
+  <button id="connectButton">Connect to MetaMask</button>
+    <p id="status"></p>
 
     <script>
         document.getElementById('connectButton').addEventListener('click', async () => {
@@ -40,6 +37,7 @@
             }
         });
     </script>
+  
       
     
     <form id="profileForm">
