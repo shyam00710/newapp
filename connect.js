@@ -2,7 +2,7 @@ import Web3 from "web
 import contractABI from "../contracts/main.json";
 import profileContractABI from "../contracts/user.json";
 
-const contractAddress = "0xD03ed2100F59eD19819093eDf1bf8618cC71Dc63";
+const contractAddress = "0x7C4e30a43ecC4d3231b5B07ed082329020D141F3";
 const profileContractAddress = "0xDb17eDFBC8e9b5AAaea0fF0885E3B0f99771727E";
 
 const Connect = ({
