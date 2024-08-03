@@ -28,6 +28,7 @@ async function connectWallet() {
 }
 
 async function createProfile() {
+  alert("1");
   const accounts = await web3.eth.getAccounts();
   const name = document.getElementById("name").value;
   const profession = document.getElementById("profession").value;
